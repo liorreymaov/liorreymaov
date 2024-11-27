@@ -2,10 +2,8 @@
     box-sizing: border-box;
     background-color: #10403B;
 }
-
-html {
-    font-size: 55.5%;
-}
+*{box-sizing:border-box;}
+html {font-size: 65.5%;}
 
 body {
     font-size: 16px;
