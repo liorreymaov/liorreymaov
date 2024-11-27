@@ -1,0 +1,187 @@
+:root{
+    --blanco  : #FFFFFF;
+    --morado : #7a0dd3;
+    --rosa_pastel : #FFDBE9;
+    --rosa_pastelClaro: #FFDBE9;
+    --pastel_claro : #E5C9BE;
+    --marron_pastel : #C8B0A6; 
+    --marron_Masoscuros : #BA8E7A;
+    --negro : #011F26;
+}
+
+
+* { box-sizing: border-box;
+background-color: var(--rosa_pastel);}
+body {font-size: 16px; margin: 0;}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+.principal{
+    display: flex;
+    background-repeat: no-repeats;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.principal a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--marron_Masoscuros);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.principal a:hover {
+    background-color: var(--blanco);
+}
+
+
+
+
+@media (min-width:768px) {
+    .principal {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/*principal*/
+.div_principal {
+    background-image: url(../img/Fondo.PNG);
+    background-repeat: no-repeats;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width:768px) {
+    .div_principal {
+        flex-direction: row-reverse;
+    }
+}
+
+/* div izquierdo*/
+.nombre {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+@media (min-width:768px) {
+    .nombre {
+        font-size: 5rem;
+    }
+}
+
+.div_izq, .div_der {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .div_izq, .div_der {
+        width: 50%;
+    }
+}
+
+/*div derecho*/
+
+.div_der {
+    display: flex;
+    justify-content: center; /*horizontal*/
+}
+
+
+.parrafo1 {
+    color: var(--blanco);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (min-width:768px) {
+    .parrafo1 {
+        font-size: 1.4rem;
+    }
+}
+
+/*Div Sección Contacto*/
+
+.div_contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:"Roboto Mono", monospace; 
+}
+.div_redes, .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 2rem;
+    margin: 3rem auto;
+}
+
+.div_redes{
+    font-size: 3rem;
+}
+.div_redes a {
+    text-decoration: none;
+}
+
+ @media(min-width:768px){
+    .div_redes, .mail{
+        width: 30rem;
+        margin-left: 10rem;
+    }
+ }@media(min-width:768px){
+    .div_contacto{
+        flex-direction: row;
+    }
+ }
+.logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo{
+    color: var(--negro);
+}
+
+.whatsapp{
+    text-decoration: none;
+    color: #011F26;
+}
+.instagram{
+    text-decoration: none;
+    color: #011F26;
+}
+
+
+.div_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  Correo  */
+
+#correo{
+    text-decoration: none;
+}
+
+.parrafo_final{
+    color: var(--blanco);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+

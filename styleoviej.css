@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    background-color: #10403B;
+}
+
+html {
+    font-size: 55.5%;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cuadrados, .contenido, .texto_explicativo {
+    background-color: #0d3531;
+    border-radius: 15px;
+    padding: 15px;
+    width: 40rem;
+    margin: 0;
+    text-align: center; 
+}
+
+.navegacion_principal {
+    display: flex;
+    flex-direction: column;
+    font-size: 3.4rem;
+}
+
+.navegacion_principal a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navegacion_principal a:hover {
+    background-color: #156961;
+    transition: color 1.3s, transform 0.3s;
+}
+
+@media (min-width: 768px) {
+    .navegacion_principal {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.div_principal {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .div_principal {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }/*hijos */
+    .div_principal > .div_izq, 
+    .div_principal > .div_der {
+        width: 50rem;
+        margin: 0;
+    }
+}
+
+.div_izq, .div_der {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.parrafo1 {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #0d3531;
+}
+
+@media (min-width: 768px) {
+    .parrafo1 {
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* multiple*/
+.foto_perfil, .foto_algo {
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .foto_perfil, .foto_algo {
+        width: 25rem;
+        height: 25rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .foto_perfil, .foto_algo {
+        width: 25rem;
+        height: 25rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.texto_capsula {
+    border: 2px solid #127369;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #127369; 
+    color: #10403B;
+    font-family: "Delius", sans-serif;
+    text-align: center;
+}
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
