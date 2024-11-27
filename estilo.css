@@ -1,15 +1,17 @@
-/* Efectos Hover y Focus */
+/*hover*/
 .pagleo:hover, .pagcami:hover{
     color: #10a4d1;
 }
+/*focus*/
 .pagleo:focus, .pagcami:focus{
-    color:red
+    color:red;
 }
-.liceo:target #liceoImage {
-    display: block;
+/*target*/
+.pagleo:target  {
+    color:blue;
 }
 
-/* Selectores Múltiples */
+/* Multiples */
 .pagleo, .pagcami {
     text-decoration: none;
     color: white;
@@ -18,7 +20,7 @@
     transition: color 0.3s, transform 0.3s;
 }
 
-/* Selectores de Hijos */
+/* Hijos */
 .container > p {
     color: blue;
     font-size: 1.5rem;
