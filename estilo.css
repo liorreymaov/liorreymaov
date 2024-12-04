@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Reset y estilos generales */
 * {
     background-color: #A6855D;
     margin: 0;
@@ -31,6 +31,11 @@ body {
     margin: 0.5rem;
     text-align: center;
     transition: color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el ícono y el texto */
+    font-family: 'Dancing Script', cursive; /* Fuente atractiva */
+    font-size: 1.5rem; /* Tamaño de letra adecuado */
 }
 
 /* Estilos para los títulos y textos */
@@ -138,18 +143,4 @@ body {
 
 .iconocami {
     color: red;
-}
-
-.pagleo, .pagcami {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem; /* Espacio entre el ícono y el texto */
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-
-.pagleo .material-symbols-outlined,
-.pagcami .material-symbols-outlined {
-    margin-right: 0.5rem;
 }
