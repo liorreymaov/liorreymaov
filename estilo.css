@@ -1,36 +1,4 @@
-/*hover*/
-.pagleo:hover, .pagcami:hover{
-    color: #10a4d1;
-}
-/*focus*/
-.pagleo:focus, .pagcami:focus{
-    color:red;
-}
-/*target*/
-.pagleo:target  {
-    color:blue;
-}
-
-/* Multiples */
-.pagleo, .pagcami {
-    text-decoration: none;
-    color: white;
-    margin: 0.5rem;
-    text-align: center;
-    transition: color 0.3s, transform 0.3s;
-}
-
-/* Hijos */
-.container > p {
-    color: blue;
-    font-size: 1.5rem;
-}
-
-/* Selectores Descendentes */
-.container p {
-    color: green;
-    font-size: 1.2rem;
-}
+/* Reset y estilos generales */
 * {
     background-color: #A6855D;
     margin: 0;
@@ -45,6 +13,28 @@ body {
     padding: 2rem;
 }
 
+/* Estilos para los enlaces con hover y focus */
+.pagleo:hover, .pagcami:hover {
+    color: #10a4d1;
+}
+
+.pagleo:focus, .pagcami:focus {
+    color: red;
+}
+
+.pagleo:target {
+    color: blue;
+}
+
+.pagleo, .pagcami {
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Estilos para los títulos y textos */
 .titulo_principal {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -89,6 +79,7 @@ body {
     }
 }
 
+/* Estilos para el contenedor principal */
 .container {
     display: flex;
     background-repeat: no-repeat;
@@ -108,7 +99,6 @@ body {
     align-items: center;
     margin: 1rem;
     flex: 1;
-    flex-direction: row;
 }
 
 @media (min-width: 768px) {
@@ -117,12 +107,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
-    .final {
-        font-size: 10rem;
-    }
-}
-
+/* Estilos para el pie de página */
 .tex_final {
     font-family: "Delius", cursive;
     font-weight: 400;
@@ -131,6 +116,13 @@ body {
     margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+    .final {
+        font-size: 10rem;
+    }
+}
+
+/* Estilos para las imágenes de perfil */
 .foto_perfil {
     border-radius: 50%;
     width: 20rem;
@@ -138,21 +130,12 @@ body {
     margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
-    .media {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
+/* Estilo para iconos */
 .material-symbols-outlined {
-    color:purple;
-  font-variation-settings:
-      
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
+    color: purple;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
-.iconocami{
-    color:red
+
+.iconocami {
+    color: red;
 }
