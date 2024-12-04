@@ -2,7 +2,7 @@
     box-sizing: border-box;
     background-color: #10403B;
 }
-*{box-sizing:border-box;}
+
 html {font-size: 65.5%;}
 
 body {
@@ -59,7 +59,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         margin: 0;
-    }/*hijos */
+    }
     .div_principal > .div_izq, 
     .div_principal > .div_der {
         width: 50rem;
@@ -68,9 +68,9 @@ body {
 }
 
 .div_izq, .div_der {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
 }
 
 .parrafo1 {
@@ -90,7 +90,6 @@ body {
     }
 }
 
-/* multiple*/
 .foto_perfil, .foto_algo {
     border-radius: 100%;
     width: 20rem;
@@ -129,6 +128,7 @@ body {
     font-family: "Delius", sans-serif;
     text-align: center;
 }
+
 img {
     transition: transform 0.3s ease-in-out;
 }
