@@ -1,4 +1,4 @@
-/* Reset y estilos generales */
+/* Estilos generales */
 * {
     background-color: #A6855D;
     margin: 0;
@@ -13,7 +13,6 @@ body {
     padding: 2rem;
 }
 
-/* Estilos para los enlaces con hover y focus */
 .pagleo:hover, .pagcami:hover {
     color: #10a4d1;
 }
@@ -107,7 +106,6 @@ body {
     }
 }
 
-/* Estilos para el pie de página */
 .tex_final {
     font-family: "Delius", cursive;
     font-weight: 400;
@@ -130,12 +128,28 @@ body {
     margin-top: 2rem;
 }
 
-/* Estilo para iconos */
+/* Estilo para iconos y texto de enlace */
 .material-symbols-outlined {
     color: purple;
+    display: inline-flex;
+    align-items: center;
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 .iconocami {
     color: red;
+}
+
+.pagleo, .pagcami {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el ícono y el texto */
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.pagleo .material-symbols-outlined,
+.pagcami .material-symbols-outlined {
+    margin-right: 0.5rem;
 }
